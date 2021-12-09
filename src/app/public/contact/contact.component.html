@@ -1,0 +1,57 @@
+<!-- Hero End -->
+
+  <div id="main" class="main">
+    <div class="container-m text-center">
+      <div class="home hero-2"><!-- Hero Section-->
+        <form class="example-form" [formGroup]="form">
+          <h1 class="text-primary">{{"public.header.contact.title" | translate}}</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label f>{{"email" | translate}}</mat-label>
+                <input matInput formControlName="email">
+                <mat-error>
+                  {{"Please_provide_a_valid_email_address" | translate}}
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>{{"name" | translate}}</mat-label>
+                <input matInput formControlName="name">
+                <mat-error>
+                  {{"the_name_must_contain_at_least_3_characters" | translate}}
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>{{"message" | translate}}</mat-label>
+                <textarea matInput formControlName="body"  rows="11" ></textarea>
+                <mat-error>
+                  {{"the_message_must_contain_at_least_30_characters" | translate}}
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 offset-md-4">
+            <button class="btn btn-primary" (click)="onSend()" [disabled]="isLoading">{{"send" | translate}}</button>
+            <mat-error *ngIf=errorMessage>
+              {{errorMessage | translate}}
+            </mat-error>
+            </div>
+          </div>
+
+          <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+        </form>
+      </div>
+
+    </div>
+
+
+  </div><!-- Hero End -->

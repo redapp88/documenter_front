@@ -1,0 +1,59 @@
+<h2 mat-dialog-title>{{"user.folders.add.title" | translate}}</h2>
+<form class="example-form" [formGroup]="form">
+<mat-dialog-content class="mat-typography">
+
+
+          <div class="row">
+            <div class="col-md-6 offset-sm-3">
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>{{"user.folders.add.name" | translate}}</mat-label>
+                <input matInput formControlName="name">
+                <mat-error>
+                  {{"user.folders.add.errors.nameError" | translate}}
+                </mat-error>
+              </mat-form-field>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-6 offset-sm-3">
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>{{"user.folders.add.description" | translate}}</mat-label>
+                <textarea matInput placeholder="this folder is about..." formControlName="description"></textarea>
+                <mat-error>
+                  {{"user.folders.add.errors.descriptionError" | translate}}
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 offset-sm-3">
+              <mat-form-field appearance="fill">
+                <mat-label>{{"user.folders.add.type" | translate}}</mat-label>
+                <mat-select matNativeControl formControlName="type">
+                  <mat-option *ngFor="let type of loadedTypes"
+                          [value]=type.id>{{type.documentTypeName}}</mat-option>
+                </mat-select>
+                <mat-error>
+                  {{"user.folders.add.errors.typeError" | translate}}
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <mat-error *ngIf=errorMessage>
+            {{errorMessage}}
+          </mat-error>
+          <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+
+
+
+
+
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close [disabled]="isLoading">{{"user.folders.add.buttons.cancel" | translate}}</button>
+  <button mat-button  cdkFocusInitial (click)="onSaveFolder() " [disabled]="isLoading">{{"user.folders.add.buttons.add" | translate}}</button>
+</mat-dialog-actions>
+</form>

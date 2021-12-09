@@ -1,0 +1,319 @@
+{
+  "public": {
+    "doc_verify": {
+      "title": "Check your Document!",
+      "subtitle": "type the code of the document to verify",
+      "subtitle": "type the code of the document to verify",
+      "button": "Search",
+      "app_download": "Scanning your barcode with DocumenterApp is much easier and faster"
+    },
+    "footer": {
+      "all_Rights_Reserved": "All Rights Reserved",
+      "terms_and_conditions": "Terms and Conditions"
+    },
+    "header": {
+      "signin": "Sign in",
+      "home": {
+        "id": "Home",
+        "body": "body"
+      },
+
+      "fees": {
+        "id": "Fees",
+        "body": "Documenter is fully Free! Enjoy"
+      },
+      "features": {
+        "id": "Features",
+        "title": "What is Documenter?",
+        "ligne1": "A platform to save documents",
+        "ligne2": "a system that ensures the authenticity of the documents you produce",
+        "ligne3": "Allows you to check a document with a simple scan of its codebare or by typing its unique key",
+        "ligne4": "An easy-to-use web and mobile application",
+        "ligne5": "Totally free",
+        "body": "body"
+      },
+      "guide":{
+        "id": "Guide"
+      },
+      "about": {
+        "id": "About as",
+        "ligne1": "LetApp is an innovative startup which aims to democratize IT solutions for the benefit of small businesses, artisans and self-entrepreneurs",
+        "ligne2": "LetApp uses the most efficient technologies and the most requested in the IT market",
+        "ligne3": "for more details visit ",
+        "url": "http://www.letapp.net"
+
+      },
+      "contact": {
+        "title": "Contact",
+        "id": "Contact",
+        "body": "body"
+      }
+
+    },
+    "guide": {
+      "id": "Guide",
+      "authentication": {
+        "title": "Authenticate with your Email and password",
+        "description": "If you do not yet have an account, create one for free by clicking on the registration button."
+      },
+      "dashboard": {
+        "title": "Consult your stats",
+        "description": "click on 'my folders' to consult the files which contain your documents."
+      },
+      "newfolder": {
+        "title": "Click on the button at the top right to add a new folder",
+        "description": "enter the information of the new file and click on add."
+      },
+      "documentslist": {
+        "title": "you will find here the list of documents that this file contains",
+        "description": "Some representative placeholder content for the third slide."
+      },
+      "newdocument": {
+        "title": "Click on the button at the top right to add a new Document.",
+        "description": "Enter the document information and the scanned images and click on save\n              A unique code will be generated for this document and a barcode containing this code will be inserted on the scanned document."
+      },
+      "codegeneration": {
+        "title": "communicate the generated code or print the document with the bar code for it to be used or scanned by your customers",
+        "description": ""
+      },
+      "documentdheck": {
+        "title": "The customer can thus consult the document and verify its authenticity.",
+        "description": ""
+      }
+    },
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "login_button": "Login",
+      "forgottenPassword": "Forgotten Password"
+    },
+    "register": {
+      "title": "Create New Account",
+      "subtitle": "Documenter helps you protect the authenticity of your documents",
+      "button": "Subscribe",
+      "messages":{
+        "success_title": "Subscripion is successful",
+        "success_description": "Your account will be verified and will contact you soon to active your account in 24H"
+      }
+    },
+    "resetPassword": {
+      "title": "Password Reset",
+      "email": "Email",
+      "buttons": {
+        "cancel": "Cancel",
+        "resetPassword": "Reset Password"
+      },
+      "errors": {
+        "emailError": "Must be a valide Email"
+      },
+      "messages": {
+        "sendindResetEmail": "Sendind Reset Email"
+      }
+    }
+  },
+  "user": {
+
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "folders": "My Folders",
+      "profile": "My profile",
+      "password": "Change password",
+      "logout": "Logout"
+    },
+    "logout": {
+      "title": "Are you sure to logout?",
+      "cancel": "Cancel",
+      "logout" : "Logout"
+    },
+    "dashboard": {
+      "topDocuments": "Top Checked Documents",
+      "topFolders": "Top Checked Folders",
+      "totalChecks": "Total Checks",
+      "list": {
+        "document": "Document",
+        "folder": "Folder",
+        "creationDate": "Creation Date",
+        "checks": "Checks"
+      }
+    },
+    "profile": {
+      "email": "Email",
+      "name": "Name",
+      "contry": "Contry",
+      "categories": "Categories",
+      "description": "Description",
+      "city": "City",
+      "postalCode": "Postal Code",
+      "adresse": "Adresse",
+      "password": "Password",
+      "buttons": {
+        "update": "Update",
+        "edit": "Edit"
+      },
+      "errors": {
+        "usernameError": "Please provide a valid email address",
+        "nameError": "  Name must containe between 10 and 50 caracters",
+        "categoryError": "Category is required",
+        "descriptionError": "A Description of 10 car is required",
+        "cityError": "City is required",
+        "postalCodeError": "Postal code is required",
+        "adressError": "Adress is required"
+      },
+      "messages": {
+        "Subsuccessful": "Subscripion is successful",
+        "confirmation": "the request to modify your password is registered consult your email to validate this request"
+      }
+    },
+    "password": {
+      "title": "Title",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "rePassword": "retype your password",
+      "errors": {
+        "currentPasswordError": " Password must contains at least 6 caracteres",
+        "newPasswordError": "Password must contains at least 6 caracteres",
+        "rePasswordError": "Password confirmation does not match"
+      },
+      "messages": {
+        "confirmation": "One more step  to confirm your password please verify your email!"
+      }
+    },
+    "folders": {
+      "documents": "Documents",
+      "openButton": "Open",
+      "add": {
+        "title": "New Folder",
+        "name": "Name",
+        "description": "Description",
+        "type": "Type",
+        "buttons": {
+          "cancel": "Cancel",
+          "add": "Add"
+        },
+        "errors": {
+          "nameError": "Name must containe between 5 and 50 caracters",
+          "descriptionError": "A Description  must contain  10 caracters",
+          "typeError": "Folder type is required"
+        }
+      },
+      "edit": {
+        "title": "Edit Folder",
+        "name": "Name",
+        "description": "Description",
+        "type": "Type",
+        "buttons": {
+          "cancel": "Cancel",
+          "edit": "Edit"
+        },
+        "errors": {
+          "nameError": "Name must containe between 5 and 50 caracters",
+          "descriptionError": "A Description  must contain  10 caracters",
+          "typeError": "Folder type is required"
+        }
+      },
+      "delete": {
+        "title": "Delete Folder",
+        "message": "Are you sure to delete this Folder",
+        "buttons": {
+          "cancel": "Cancel",
+          "delete": "Delete"
+        }
+      }
+    },
+    "documents": {
+      "list": {
+        "folder": "Folder",
+        "id": "Id",
+        "search": "Search",
+        "title": "Title",
+        "description": "Description",
+        "creationDate": "CreationDate",
+        "type": "Type",
+        "images": "Images",
+        "checks": "Checks",
+        "action": "Action"
+      },
+      "add": {
+        "title": "Add new Document",
+        "name": "Name",
+        "description": "Description",
+        "type": "Type",
+        "images": "Images",
+        "errors": {
+          "nameError": "Name must containe between 5 and 50 caracters",
+          "descriptionError": "A Description  must contain between 10 car is required",
+          "typeError": "Document type is required"
+        },
+        "messages": {
+          "savingDocument": "Saving Document",
+          "savingImages": "Saving Images",
+          "typeError": "Document type is required"
+        },
+        "buttons": {
+          "cancel": "Cancel",
+          "add": "Add",
+          "remove": "Remove",
+          "maximize": "Maximize"
+        }
+      },
+      "edit": {
+        "title": "Edit Document",
+        "name": "Name",
+        "description": "Description",
+        "type": "Type",
+        "images": "Images",
+        "errors": {
+          "nameError": "Name must containe between 5 and 50 caracters",
+          "descriptionError": "A Description  must contain between 10 car is required",
+          "typeError": "Document type is required"
+        },
+        "messages": {
+          "savingDocument": "Saving Document",
+          "savingImages": "Saving Images",
+          "typeError": "Document type is required"
+        },
+        "buttons": {
+          "cancel": "Cancel",
+          "edit": "Edit",
+          "remove": "Remove",
+          "maximize": "Maximize"
+        }
+      },
+      "delete": {
+        "title": "Delete document",
+        "message": "Are you sure to delete this document?",
+        "buttons": {
+          "cancel": "Cancel",
+          "delete": "Delete"
+        }
+      }
+    }
+  },
+  "Category_not_found": "Category_not_found",
+  "A_document_with_this_name_already_exists": "A document with this name already exists",
+  "Document_not_found": "Document not found",
+  "Document_Type_does_already_exists": "Document Type does already exists",
+  "Document_type_does_not_exist": "Document type does not exist",
+  "A_folder_with_this_name_exists_already": "A folder with this name exists already",
+  "Folder_not_found": "Folder not found",
+  "Email_already_in_use": "Email already in use",
+  "This_username_does_not_exist": "This username does not exist",
+  "The_current_password_is_not_correcte": "The current password is not correcte",
+  "Document_ID_must_contain_between_10_and_50_characters": "Document ID must contain between 10 and 50 characters",
+  "Please_provide_a_valid_email_address": "Please provide a valid email address",
+  "Please_provide_a_valid_password": " Please provide a valid password",
+  "the_name_must_contain_at_least_3_characters": "the name must contain at least 3 characters",
+  "the_message_must_contain_at_least_30_characters": "the message must contain at least 30 characters",
+  "contact_could_not_be_sent": "contact could not be sent",
+  "Unauthorized": "Your email or password are incorrect",
+  "Auth_error": "Authentication error try again later",
+  "Email_already_in_use": "Email already in use",
+
+
+  "loading": "Loading",
+  "message": "Message",
+  "send": "Send",
+  "name": "Name",
+  "email": "Email"
+}

@@ -1,0 +1,68 @@
+<div style="height: 100vh;">
+  <mat-toolbar>
+    <div fxShow="true" fxHide.gt-sm="true" align="right">
+      <a (click)="sidenav.toggle()">
+        <mat-icon>storage</mat-icon>
+      </a>
+    </div>
+    <a class="titleFont" [routerLink]="['/public/home']">Documenter.</a>
+    <app-lang-switcher></app-lang-switcher>
+
+    <span class="example-spacer"></span>
+
+    <div fxShow="true" fxHide.lt-md="true">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a  class="navbar navbar-light"  routerLink="/user/dashboard">{{'user.sidebar.dashboard'| translate}}</a>
+        <a  class="navbar navbar-light" routerLink="/user/folders">{{'user.sidebar.folders'| translate}}</a>
+
+        <a  class="navbar navbar-light" routerLink="/user/profile">{{'user.sidebar.profile'| translate}}</a>
+        <a  class="navbar navbar-light" routerLink="/user/edit-password">{{'user.sidebar.password'| translate}}</a>
+        <a class="btn d-grid btn-danger text-white"
+           (click)="onLogout()">
+          <span class="hide-menu">{{'user.sidebar.logout'| translate}}</span></a>
+      </nav>
+      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+
+
+    </div>
+
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav #sidenav fxLayout="column">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" role="tab"
+           aria-controls="v-pills-home" routerLink="/user/dashboard" (click)="showUrl()">
+          <i class="far fa-clock" aria-hidden="true"></i>
+          <span class="hide-menu">{{'user.sidebar.dashboard'| translate}}</span>
+        </a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" role="tab"
+           aria-controls="v-pills-profile" routerLink="/user/folders"
+           aria-expanded="false">
+          <i class="fa fa-table" aria-hidden="true"></i>
+          <span class="hide-menu">{{'user.sidebar.folders'| translate}}</span>
+        </a>
+        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" role="tab"
+           aria-controls="v-pills-messages" routerLink="/user/profile">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <span class="hide-menu">{{'user.sidebar.profile'| translate}}</span>
+        </a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" role="tab"
+           aria-controls="v-pills-settings" routerLink="/user/edit-password">
+          <i class="fa fa-key" aria-hidden="true"></i>
+          <span class="hide-menu">  <span class="hide-menu">{{'user.sidebar.password'| translate}}</span></span>
+        </a>
+
+
+        <a class="btn d-grid btn-danger text-white"
+           (click)="onLogout()">
+          <span class="hide-menu">{{'user.sidebar.logout'| translate}}</span></a>
+      </div>
+
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet name="user_body"></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

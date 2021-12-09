@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>{{"user.documents.delete.title" | translate}}<span *ngIf = "data.selectedElements.length>1">s</span></h2>
+
+<mat-dialog-content class="mat-typography">
+  <div class="row">
+    <div class="col">
+      <p>{{"user.documents.delete.message" | translate}}<span *ngIf = "data.selectedElements.length>1">s</span></p>
+    </div>
+  </div>
+  <mat-error *ngIf=errorMessage>
+    {{errorMessage}}
+  </mat-error>
+  <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close [disabled]="isLoading">{{"user.documents.delete.buttons.cancel" | translate}}</button>
+  <button mat-button  cdkFocusInitial (click)="onDeleteDocments() " [disabled]="isLoading">{{"user.documents.delete.buttons.delete" | translate}}</button>
+</mat-dialog-actions>

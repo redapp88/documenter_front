@@ -1,0 +1,15 @@
+<h2 mat-dialog-title>Logout</h2>
+
+<mat-dialog-content class="mat-typography">
+  <div class="row">
+    <div class="col">
+      <p>{{"user.logout.title" | translate}}</p>
+    </div>
+  </div>
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button cdkFocusInitial mat-dialog-close >{{"user.logout.cancel" | translate}}</button>
+  <button mat-button   (click)="onConfirm() ">{{"user.logout.logout" | translate}}</button>
+</mat-dialog-actions>

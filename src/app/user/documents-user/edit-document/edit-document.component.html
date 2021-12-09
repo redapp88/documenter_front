@@ -1,0 +1,88 @@
+<h2 mat-dialog-title>{{"user.documents.edit.title" | translate}}</h2>
+<form class="example-form" [formGroup]="form">
+  <mat-dialog-content class="mat-typography">
+
+
+    <div class="row">
+      <div class="col-md-6 offset-sm-3">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>{{"user.documents.edit.name" | translate}}</mat-label>
+          <input matInput formControlName="name">
+          <mat-error>
+            {{"user.documents.edit.errors.nameError" | translate}}
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-sm-3">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Description</mat-label>
+          <textarea matInput placeholder="this folder is about..." formControlName="description"></textarea>
+          <mat-error>
+            {{"user.documents.edit.errors.descriptionError" | translate}}
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-sm-3">
+        <mat-form-field appearance="fill">
+          <mat-label>Type</mat-label>
+          <mat-select matNativeControl formControlName="type">
+            <mat-option *ngFor="let type of loadedTypes"
+                        [value]=type.id>{{type.documentTypeName}}</mat-option>
+          </mat-select>
+          <mat-error>
+            {{"user.documents.edit.errors.typeError" | translate}}
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngIf="isSavingDocument">
+        <h4>   {{"user.documents.edit.messages.savingDocument" | translate}}</h4>
+        <mat-progress-bar mode="indeterminate"*></mat-progress-bar>
+      </div>
+      <div *ngIf="isSavingImages">
+        <h4>{{"user.documents.edit.messages.savingImages" | translate}}</h4>
+        <mat-progress-bar mode="indeterminate"*></mat-progress-bar>
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-2 productAddfromImages" *ngFor='let image of loadedImages; let i = index'>
+            <img class="img-fluid" [src]="'data:image/png;base64,'+image.url">
+            <a (click)="removeImage(i)" class="btn btn-xs btn-danger">{{"user.documents.edit.buttons.remove" | translate}}</a>
+            <a (click)="maximizeImage('data:image/png;base64,'+image.url)" class="btn btn-xs btn-primary">{{"user.documents.edit.buttons.maximize" | translate}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="card main-title" >
+        <div class="col-md-12">
+          <div class="form-group">
+            <br>
+            <label class="form-label">{{"user.documents.edit.images" | translate}}</label>
+            <input type="file"
+
+                   class="form-control"
+                   (change)="onSelectFile($event)"
+                   multiple accept="image/*" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <mat-error *ngIf=errorMessage>
+      {{errorMessage}}
+    </mat-error>
+
+
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close [disabled]="isSavingDocument || isSavingImages">{{"user.documents.edit.buttons.cancel" | translate}}</button>
+    <button mat-button  cdkFocusInitial (click)="onSaveDocument() " [disabled]="isSavingDocument || isSavingImages">{{"user.documents.edit.buttons.edit" | translate}}</button>
+  </mat-dialog-actions>
+</form>
+
+

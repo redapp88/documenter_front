@@ -1,0 +1,70 @@
+<div class="page-wrapper">
+  <H1 align="center" class="text-primary ">{{'user.sidebar.folders'| translate}}</H1>
+<div class="container-fluid">
+  <!-- ============================================================== -->
+  <!-- Three charts -->
+  <!-- ============================================================== -->
+  <form class="example-form" [formGroup]="form">
+  <div class="row">
+
+    <div class="col-md-4  offset-md-2 col">
+      <mat-form-field  class="example-full-width" appearance="fill" (change)="onKeywordChange()">
+        <mat-label>{{"user.documents.list.search" | translate}}</mat-label>
+          <input formControlName="keyword" matInput placeholder="Keyword">
+          <mat-icon matSuffix >search</mat-icon>
+        </mat-form-field>
+
+    </div>
+
+    <div class="col-md-2 col offset-md-3">
+      <button mat-fab color="primary" (click)="onAddFolder()"><mat-icon>add_circle</mat-icon></button>
+    </div>
+  </div>
+  </form>
+  <div class="row" align="center">
+
+  <div class="col-md-3 col-sm-6" *ngFor="let folder of loadedFolderPage?.content">
+  <div class="card" style="width: 18rem;">
+     <span
+       class="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+       [ngClass]="folder.documentsCount == 0 ? 'bg-danger' : 'bg-success'"
+     >
+    {{folder.documentsCount}}
+    <span class="visually-hidden">{{'user.folders.documents' | translate}}</span>
+  </span>
+    <div class="card-body">
+      <h4 class="card-title">{{folder.name}}</h4>
+      <p class="card-text">{{folder.description}}</p>
+      <a class="btn btn-primary" (click)="onOpenFolder(folder.id)">{{'user.folders.openButton' | translate}}</a>
+      <p align="right" class="card-text">{{folder.creationDate | date:'mediumDate' }}</p>
+      <div class="example-button-row" align="right">
+
+        <button mat-mini-fab color="primary" (click)="onDeleteFolder(folder.id)" >
+          <mat-icon>delete</mat-icon>
+        </button>
+        <button mat-mini-fab  color="warning" (click)="onEditFolder(folder)">
+          <mat-icon>edit</mat-icon>
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+  <div class="row">
+    <div class="col">
+
+
+      <mat-paginator [length]="loadedFolderPage?.numberOfElements"
+                     [pageSize]="size"
+                     [pageIndex]="page"
+                     [pageSizeOptions]="[5, 10, 25, 100]"
+                     (page)="onPaginatorChange($event)"
+                     aria-label="Select page">
+      </mat-paginator>
+
+    </div>
+  </div>
+</div>
+</div>

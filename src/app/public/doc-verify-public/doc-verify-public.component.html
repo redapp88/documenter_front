@@ -1,0 +1,62 @@
+<div id="main" class="main">
+  <div class="container-m text-center">
+    <div class="home hero-2"><!-- Hero Section-->
+      <div class="hero-content wow fadeIn">
+        <h1 class="text-center text-info">{{"public.doc_verify.title" | translate}}</h1>
+        <h4 class="text-center">{{"public.doc_verify.subtitle" | translate}}</h4>
+          <form
+            [formGroup]="form">
+            <div class="row">
+              <div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <input matInput formControlName="docId">
+                  <mat-error>
+                    {{"Document_ID_must_contain_between_10_and_50_characters" | translate}}
+                  </mat-error>
+                </mat-form-field>
+                <button [disabled]="isLoading" class="btn btn-primary btn-lg btn-block marginTop" (click)="onSearchDocument()">
+                  {{"public.doc_verify.button" | translate}}
+                  <div style="padding-right: 10px" class="spinner-border" role="status"  *ngIf="isLoading">
+                    <span class="sr-only"> {{"loading" | translate}}...</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+    <div >
+        <h3 class="text-primary">{{"public.doc_verify.app_download" | translate}}</h3>
+        <img class="app_img" src="assets/appDownload.jpg">
+    </div>
+  </div><!-- Hero End -->
+  <div #features class="cta-sm wow fadeIn">
+    <div class="container-m text-center">
+      <div class="cta-content">
+        <h4>{{"public.header.features.id" | translate}}</h4>
+        <h1>{{"public.header.features.title" | translate}}</h1>
+        <ul class="list-group">
+          <li class="list-group-item">{{"public.header.features.ligne1" | translate}}</li>
+          <li class="list-group-item">{{"public.header.features.ligne2" | translate}}</li>
+          <li class="list-group-item">{{"public.header.features.ligne3" | translate}}</li>
+          <li class="list-group-item">{{"public.header.features.ligne4" | translate}}</li>
+          <li class="list-group-item">{{"public.header.features.ligne5" | translate}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div #fees id="fees" class="main">
+
+    <div class="container-m text-center">
+      <div class="cta-content">
+        <h1 class="text-info">{{"public.header.fees.id" | translate}}</h1>
+        <H2>
+          {{"public.header.fees.body" | translate}}
+        </H2>
+      </div>
+    </div>
+  </div>
+
+
+

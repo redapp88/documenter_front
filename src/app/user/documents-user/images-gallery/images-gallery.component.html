@@ -1,0 +1,12 @@
+<div>
+  <h2 mat-dialog-title>{{data.document.title}}</h2>
+  <p mat-dialog-title>{{data.document.description}}</p>
+</div>
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-md-2 productAddfromImages" *ngFor='let image of loadedImages; let i = index' style="padding-left: 15px">
+      <img [src]="'data:image/png;base64,'+image.url">
+      <a  (click)="maximizeImage('data:image/png;base64,'+image.url)" class="btn btn-xs btn-primary">{{"user.documents.edit.buttons.maximize" | translate}}</a>
+    </div>
+  </div>
+</div>

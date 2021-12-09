@@ -1,0 +1,19 @@
+<!--
+<app-navbar></app-navbar>
+<div class="container">
+    <app-introduction></app-introduction>
+    <app-message-principal></app-message-principal>
+    <app-formation-list></app-formation-list>
+</div>
+<app-my-footer></app-my-footer>
+
+-->
+
+<div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+     data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+  <router-outlet name="page_header"></router-outlet>
+  <router-outlet name="page_left_sidebar"></router-outlet>
+  <router-outlet name="page_body"></router-outlet>
+  <router-outlet name="page_footer"></router-outlet>
+
+</div>

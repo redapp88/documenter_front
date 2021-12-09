@@ -1,0 +1,76 @@
+<div id="main" class="main">
+  <H1 align="center" class="text-primary ">{{'user.sidebar.dashboard'| translate}}</H1>
+  <div class="container-m text-center">
+    <div class="home hero-2"><!-- Hero Section-->
+
+
+<div class="row">
+  <div class="col-md-5 col-sm-12">
+    <H1>{{'user.dashboard.topDocuments'| translate}}</H1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">{{'user.dashboard.list.document'| translate}}</th>
+        <th scope="col">{{'user.dashboard.list.creationDate'| translate}}</th>
+        <th scope="col">{{'user.dashboard.list.checks'| translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let document of loadedDocuments; let index = index">
+        <th scope="row">{{index+1}}</th>
+        <td>{{document.title}}</td>
+        <td> {{document.creatDate | date:'mediumDate' }}</td>
+        <td>{{document.checksCount}}</td>
+      </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+  <div class="col-md-6 offset-md-1 col-sm-12">
+    <H1>{{'user.dashboard.topFolders'| translate}}</H1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">{{'user.dashboard.list.folder'| translate}}</th>
+        <th scope="col">{{'user.dashboard.list.creationDate'| translate}}</th>
+        <th scope="col">{{'user.dashboard.list.checks'| translate}}</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let folder of loadedFolders; let index = index">
+        <th scope="row">{{index+1}}</th>
+        <td>{{folder.name}}</td>
+        <td> {{folder.creationDate | date:'mediumDate' }}</td>
+        <td>{{folder.checksCount}}</td>
+      </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+</div>
+      <div class="row">
+
+        <div class="col-md-12 col-sm-12">
+          <H1>{{'user.dashboard.totalChecks'| translate}}</H1>
+        <google-chart #mychart
+            [type]="chartData.type"
+            [data]="chartData.data"
+            [columns]="chartData.chartColumns"
+            [width]="chartData.width"
+            [height]="chartData.height">
+
+          </google-chart>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>

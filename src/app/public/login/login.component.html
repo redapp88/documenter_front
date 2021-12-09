@@ -1,0 +1,73 @@
+<div #home id="main" class="main">
+  <div class="container-m text-center" id="home">
+    <div class="home hero-2"><!-- Hero Section-->
+      <div class="hero-content wow fadeIn">
+
+
+        <mat-card>
+          <mat-card-header>
+            <h2>{{"public.login.title" | translate}}</h2>
+          </mat-card-header>
+          <mat-card-content>
+            <form [formGroup]="form">
+
+              <mat-error *ngIf=errorMessage>
+                {{errorMessage | translate}}
+              </mat-error>
+              <mat-form-field class="full-width-input">
+                <input matInput placeholder="{{'public.login.email' | translate}}" formControlName="email"
+                       (keydown.enter)=" onLogin()">
+                <mat-error>
+                  {{"Please_provide_a_valid_email_address" | translate}}
+                </mat-error>
+              </mat-form-field>
+              <mat-form-field class="full-width-input">
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password"
+                       placeholder="{{'public.login.password' | translate}}" (keydown.enter)=" onLogin()">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+                <mat-error>
+                  {{"Please_provide_a_valid_password" | translate}}
+                </mat-error>
+              </mat-form-field>
+              <button mat-raised-button color="primary" (click)="onLogin()"
+                      [disabled]="isLoading">{{'public.login.login_button' | translate}}</button>
+
+            </form>
+            <div style="margin-top: 8px"><a mat-raised-button class="btn btn-primary stretched-link"
+                                            (click)="onResetPassword()">{{'public.login.forgottenPassword' | translate}}
+              ?</a></div>
+          </mat-card-content>
+          <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+        </mat-card>
+
+
+      </div>
+    </div>
+
+  </div>
+</div><!-- Hero End -->
+
+
+<!-- Array Reviews Ends -->
+
+
+<!-- CTA Signup Section -->
+<div id="signup" class="cta-sm wow fadeIn">
+  <div class="container-m text-center">
+    <div class="cta-content">
+      <h4>{{"public.register.title" | translate}}</h4>
+      <h1>{{"public.register.subtitle" | translate}}</h1>
+      <a class="btn-action js-scroll-trigger"
+         [routerLink]="['/public/subscribe']">{{"public.register.button" | translate}}</a>
+      <div class="form-note">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

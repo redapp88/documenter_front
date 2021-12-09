@@ -1,0 +1,303 @@
+{
+  "public": {
+    "doc_verify": {
+      "title": "Vérifiez votre document !",
+      "subtitle": "Entrez le code du document à vérifier",
+      "button": "Rechercher",
+      "app_download": "Le scannage de votre code à barres avec l'application DocumenterApp est beaucoup plus facile et rapide"
+    },
+    "footer": {
+      "all_Rights_Reserved": "Tous droits réservés",
+      "terms_and_conditions": "Termes et conditions"
+    },
+    "header": {
+      "signin": "Se connecter",
+      "home": {
+        "id": "Accueil",
+        "body": "Corps"
+      },
+      "fees": {
+        "id": "Frais",
+        "body": "La documentation est entièrement gratuite ! Appréciez"
+      },
+      "features": {
+        "id": "Fonctions",
+        "title": "Qu'est -ce que Documenter?",
+        "ligne1": "Une plateforme pour sauvegarder des documents",
+        "ligne2": "Un système qui garantit l'authenticité des documents que vous produiez",
+        "ligne3": "Permet de vérifier un document avec une analyse simple de sa codebare ou en tapant sa clé unique",
+        "ligne4": "Une application Web et mobile facile à utiliser",
+        "ligne5": "Totalement gratuit",
+        "body": "Corps"
+      },
+      "guide": {
+        "id": "Guide"
+      },
+      "about": {
+        "id": "A propos de",
+        "ligne1": "LetApp est une start-up innovante qui vise à démocratiser les solutions informatiques au bénéfice des petites entreprises, des artisans et des autoentrepreneurs",
+        "ligne2": "LetApp utilise les technologies les plus efficaces et les plus demandées sur le marché de l'informatique",
+        "ligne3": "Pour plus de détails, visite ",
+        "url": "http:\/\/www.letapp.net"
+      },
+      "contact": {
+        "title": "Contact",
+        "id": "Contact",
+        "body": "Corps"
+      }
+    },
+    "guide": {
+      "id": "Guide",
+      "authentication": {
+        "title": "Authentifier avec votre e-mail et votre mot de passe",
+        "description": "Si vous n'avez pas encore de compte, créez un compte gratuit en cliquant sur le bouton d'inscription."
+      },
+      "dashboard": {
+        "title": "Consultez vos statistiques",
+        "description": "Cliquez sur \"Mes dossiers\" pour consulter les fichiers qui contiennent vos documents."
+      },
+      "newfolder": {
+        "title": "Cliquez sur le bouton en haut à droite pour ajouter un nouveau dossier",
+        "description": "Entrez les informations du nouveau fichier et cliquez sur Ajouter."
+      },
+      "documentslist": {
+        "title": "Vous trouverez ici la liste des documents que contient ce fichier",
+        "description": "Contenu d'une marque de réservation représentative pour la troisième diapositive."
+      },
+      "newdocument": {
+        "title": "Cliquez sur le bouton en haut à droite pour ajouter un nouveau document.",
+        "description": "Entrez les informations du document et les images numérisées et cliquez sur Enregistrer Un code unique sera généré pour ce document et un code à barres contenant ce code sera inséré dans le document numérisé."
+      },
+      "codegeneration": {
+        "title": "Communiquer le code généré ou imprimer le document avec le code à barres pour qu'il soit utilisé ou numérisé par vos clients ;",
+        "description": ""
+      },
+      "documentdheck": {
+        "title": "Le client peut donc consulter le document et vérifier son authenticité.",
+        "description": ""
+      }
+    },
+    "login": {
+      "title": "Connexion",
+      "email": "Courrier électronique",
+      "password": "Mot de passe",
+      "login_button": "Connexion",
+      "forgottenPassword": "Mot de passe oublié"
+    },
+    "register": {
+      "title": "Créer un nouveau compte",
+      "subtitle": "La documentation vous aide à protéger l'authenticité de vos documents",
+      "button": "Abonnez-vous",
+      "messages": {
+        "success_title": "Le sous-scripion a abouti",
+        "success_description": "Votre compte sera vérifié et vous contactera rapidement pour votre compte en 24H"
+      }
+    },
+    "resetPassword": {
+      "title": "Mot de passe réiniti",
+      "email": "Courrier électronique",
+      "buttons": {
+        "cancel": "Annuler",
+        "resetPassword": "Réinitialiser le mot"
+      },
+      "errors": {
+        "emailError": "Doit être un courrier électronique valide"
+      },
+      "messages": {
+        "sendindResetEmail": "Sendind Reset Email"
+      }
+    }
+  },
+  "user": {
+    "sidebar": {
+      "dashboard": "Tableau de bord",
+      "folders": "Mes dossiers",
+      "profile": "Mon profil",
+      "password": "Modifier mot de passe",
+      "logout": "Déconnexion"
+    },
+    "dashboard": {
+      "topDocuments": "Principaux documents vérifiés",
+      "topFolders": "Dossiers les plus vérifiés",
+      "totalChecks": "Total des vérifications",
+      "list": {
+        "document": "Document",
+        "folder": "Dossier",
+        "creationDate": "Date de création",
+        "checks": "Vérifications"
+      }
+    },
+    "profile": {
+      "email": "Courrier électronique",
+      "name": "Nom",
+      "contry": "Contente",
+      "categories": "Catégories",
+      "description": "Description",
+      "city": "Ville",
+      "postalCode": "Code postal",
+      "adresse": "Adresse",
+      "password": "Mot de passe",
+      "buttons": {
+        "update": "Mise à jour"
+      },
+      "errors": {
+        "usernameError": "Veuillez fournir une adresse électronique valide",
+        "nameError": "  Le nom doit être compris entre 10 et 50 caracters",
+        "categoryError": "La catégorie est obligatoire",
+        "descriptionError": "Une description de 10 wagons est requise.",
+        "cityError": "La ville est requise",
+        "postalCodeError": "Le code postal est requis",
+        "adressError": "L'adresse est requise"
+      },
+      "messages": {
+        "Subsuccessful": "Le sous-scripion a abouti"
+      }
+    },
+    "password": {
+      "title": "Titre",
+      "currentPassword": "Mot de passe actuel",
+      "newPassword": "Nouveau mot de passe",
+      "rePassword": "Retapez votre mot de passe",
+      "errors": {
+        "currentPasswordError": " Le mot de passe doit contenir au moins 6 caracteres",
+        "newPasswordError": "Le mot de passe doit contenir au moins 6 caracteres",
+        "rePasswordError": "La confirmation du mot de passe ne correspond pas"
+      },
+      "messages": {
+        "confirmation": "Une autre étape pour confirmer votre mot de passe s'il vous plaît vérifier votre email !"
+      }
+    },
+    "folders": {
+      "openButton": "Ouvrir",
+      "add": {
+        "title": "Nouveau dossier",
+        "name": "Nom",
+        "description": "Description",
+        "type": "Type",
+        "buttons": {
+          "cancel": "Annuler",
+          "add": "Ajouter"
+        },
+        "errors": {
+          "nameError": "Le nom doit être compris entre 5 et 50 caracters",
+          "descriptionError": "Une description doit contenir 10 caracters",
+          "typeError": "Le type de dossier est obligatoire"
+        }
+      },
+      "edit": {
+        "title": "Editer le dossier",
+        "name": "Nom",
+        "description": "Description",
+        "type": "Type",
+        "buttons": {
+          "cancel": "Annuler",
+          "edit": "Editer"
+        },
+        "errors": {
+          "nameError": "Le nom doit être compris entre 5 et 50 caracters",
+          "descriptionError": "Une description doit contenir 10 caracters",
+          "typeError": "Le type de dossier est obligatoire"
+        }
+      },
+      "delete": {
+        "title": "Supprimer le dossier",
+        "message": "Etes-vous sûr de supprimer ce dossier",
+        "buttons": {
+          "cancel": "Annuler",
+          "delete": "Supprimer"
+        }
+      }
+    },
+    "documents": {
+      "list": {
+        "folder": "Dossier",
+        "id": "ID",
+        "search": "Rechercher",
+        "title": "Titre",
+        "description": "Description",
+        "creationDate": "Date de création",
+        "type": "Type",
+        "images": "Images",
+        "checks": "Vérifications",
+        "action": "Action"
+      },
+      "add": {
+        "title": "Ajouter un nouveau document",
+        "name": "Nom",
+        "description": "Description",
+        "type": "Type",
+        "images": "Images",
+        "errors": {
+          "nameError": "Le nom doit être compris entre 5 et 50 caracters",
+          "descriptionError": "Une description doit contenir entre 10 wagons.",
+          "typeError": "Le type de document est obligatoire"
+        },
+        "messages": {
+          "savingDocument": "Enregistrement d'un document",
+          "savingImages": "Enregistrement d'images",
+          "typeError": "Le type de document est obligatoire"
+        },
+        "buttons": {
+          "cancel": "Annuler",
+          "add": "Ajouter",
+          "remove": "Supprimer",
+          "maximize": "Agrandir"
+        }
+      },
+      "edit": {
+        "title": "Editer le document",
+        "name": "Nom",
+        "description": "Description",
+        "type": "Type",
+        "images": "Images",
+        "errors": {
+          "nameError": "Le nom doit être compris entre 5 et 50 caracters",
+          "descriptionError": "Une description doit contenir entre 10 wagons.",
+          "typeError": "Le type de document est obligatoire"
+        },
+        "messages": {
+          "savingDocument": "Enregistrement d'un document",
+          "savingImages": "Enregistrement d'images",
+          "typeError": "Le type de document est obligatoire"
+        },
+        "buttons": {
+          "cancel": "Annuler",
+          "edit": "Editer",
+          "remove": "Supprimer",
+          "maximize": "Agrandir"
+        }
+      },
+      "delete": {
+        "title": "Supprimer le document",
+        "message": "Etes-vous sûr de supprimer ce document?",
+        "buttons": {
+          "cancel": "Annuler",
+          "delete": "Supprimer"
+        }
+      }
+    }
+  },
+  "Category_not_found": "Category_not_found",
+  "A_document_with_this_name_already_exists": "Un document portant ce nom existe déjà",
+  "Document_not_found": "Document non trouvé",
+  "Document_Type_does_already_exists": "Le type de document existe déjà",
+  "Document_type_does_not_exist": "Le type de document n'existe pas",
+  "A_folder_with_this_name_exists_already": "Un dossier portant ce nom existe déjà",
+  "Folder_not_found": "Dossier non trouvé",
+  "Email_already_in_use": "Courrier électronique déjà utilisé",
+  "This_username_does_not_exist": "Ce nom d'utilisateur n'existe pas",
+  "The_current_password_is_not_correcte": "Le mot de passe actuel n'est pas un mot de passe",
+  "Document_ID_must_contain_between_10_and_50_characters": "L'ID document doit contenir entre 10 et 50 caractères",
+  "Please_provide_a_valid_email_address": "Veuillez fournir une adresse électronique valide",
+  "Please_provide_a_valid_password": " Veuillez indiquer un mot de passe valide",
+  "the_name_must_contain_at_least_3_characters": "Le nom doit contenir au moins 3 caractères",
+  "the_message_must_contain_at_least_30_characters": "Le message doit contenir au moins 30 caractères",
+  "contact_could_not_be_sent": "Le contact n'a pas pu être envoyé",
+  "Unauthorized": "Votre adresse électronique ou votre mot de passe sont incorrects",
+  "Auth_error": "Erreur d'authentification à nouveau ultérieurement",
+  "loading": "Chargement",
+  "message": "Message",
+  "send": "Envoyer",
+  "name": "Nom",
+  "email": "Courrier électronique"
+}
